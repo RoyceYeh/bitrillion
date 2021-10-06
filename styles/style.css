@@ -10,7 +10,7 @@ h2 {
   font-weight: bold;
 }
 header {
-  margin: 0 auto;
+  margin: auto;
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
@@ -20,7 +20,7 @@ header {
 nav {
   margin: auto;
   max-width: var(--max-width);
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
