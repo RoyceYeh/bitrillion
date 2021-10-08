@@ -1,76 +1,5 @@
-:root {
-  --max-width: 1200px;
-  --main-color: #0052fe;
-  --light-grey: #606060;
-  --border-color: #c4c4c4;
-}
-
-#side-menu-switch {
-  position: fixed;
-  opacity: 0;
-  z-index: -1;
-}
-
 h3 {
   font-size: 1.5rem;
-}
-
-/*----------------------hearder----------------------------*/
-header {
-  margin: 0 auto;
-  border-bottom: 1px solid var(--border-color);
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 2;
-}
-nav {
-  margin: auto;
-  max-width: var(--max-width);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-nav .logo a {
-  font-size: 1.5rem;
-  color: var(--main-color);
-  font-weight: bold;
-}
-nav .logo img {
-  width: 50px;
-}
-nav .menu ul {
-  display: flex;
-  gap: 1rem;
-}
-nav .menu ul li a {
-  color: var(--light-grey);
-}
-
-nav .login {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-nav .login a {
-  color: var(--light-grey);
-}
-nav .login button {
-  border: none;
-  background-color: var(--main-color);
-  color: #fff;
-  padding: 0.75rem;
-}
-
-nav .login button:hover {
-  cursor: pointer;
 }
 
 main {
@@ -86,7 +15,7 @@ main {
   top: 150px;
   left: 0px;
   border: 1px solid var(--border-color);
-  height: 100vh;
+  height: 586px;
 }
 .sidebar ul {
   height: 100%;
@@ -272,54 +201,6 @@ main {
 .tab_css input:checked + label + .tab_content {
   display: initial;
 }
-/*------------ footer------------- */
-
-footer {
-  background: rgb(250, 250, 250);
+.tradingview-widget-copyright {
+  border: 1px solid var(--border-color);
 }
-footer .footer_wrap {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 2.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 3rem;
-}
-footer .footer_wrap .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-footer .footer_wrap .logo a {
-  font-size: 1.5rem;
-  color: var(--main-color);
-  font-weight: bold;
-  padding: 1rem;
-}
-
-footer .footer_wrap .logo select {
-  padding: 0.5rem;
-}
-
-footer .footer_wrap .logo p {
-  padding: 1rem;
-  color: var(--light-grey);
-}
-
-footer .footer_wrap .list {
-  display: flex;
-  gap: 2rem;
-}
-
-footer .footer_wrap .list li:nth-child(1) {
-  padding: 1rem 2rem;
-  font-weight: bold;
-}
-
-footer .footer_wrap .list a {
-  color: var(--light-grey);
-  padding: 2rem;
-  line-height: 1.5;
-}
-/*  */
