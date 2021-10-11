@@ -13,6 +13,11 @@ svg {
 .row > * {
   max-width: 100%;
 }
+.row-col {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Container */
 
 .container {

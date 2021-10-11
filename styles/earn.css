@@ -152,4 +152,18 @@
   text-align: center;
   padding: 2rem 0;
 }
+
 /* faq */
+.faq {
+  padding: 2rem 0;
+}
+.faq .container .row-col {
+  justify-content: center;
+}
+.faq .container .row-col .row {
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  font-size: 1.25rem;
+}

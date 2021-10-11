@@ -373,8 +373,6 @@
                 </div>
                 
               </div>
-              
-                
             </a>
           </div>
         </div>
@@ -386,32 +384,30 @@
             <div class="col-12">
               <h2>Calculate your potential rewards</h2>
             </div>
-            <div class="col-12">
-              <div class="calculator">
-                <div class="row aln-center">
-                  <div class="col-12 col-md-2">
-                    <label class="field-label-6">幣種</label
-                    ><select class="select-field w-select">
+            <div class="col-12 calculator">
+                <div class="row aln-center jc-center">
+                  <div class="col-12 col-md-1">
+                    <label>幣種</label>
+                    <select>
                       <option value="USDT">USDT</option>
                       <option value="BTC">BTC</option>
                       <option value="ETH">ETH</option>
                       <option value="USDC">USDC</option>
                     </select>
                   </div>
-                  <div class="col-12 col-md-3">
-                    <label for="input-amount" class="field-label-6"
+                  <div class="col-12 col-md-2">
+                    <label for="input-amount" 
                       >申購數量</label
                     ><input
                       id="input-amount"
                       type="number"
-                      class="text-field-4 number-input w-input"
                       placeholder="輸入數量"
                       value=""
                     />
                   </div>
-                  <div class="col-12 col-md-2">
-                    <label class="field-label-7">存續天期</label
-                    ><select class="select-field w-select">
+                  <div class="col-12 col-md-1">
+                    <label>存續天期</label
+                    ><select>
                       <option value="7">7天</option>
                       <option value="14">14天</option>
                       <option value="30">30天</option>
@@ -421,36 +417,32 @@
                     </select>
                   </div>
                   <div class="col-12 col-md-2">
-                    <label for="input-profit-rate" class="field-label-7"
+                    <label for="input-profit-rate"
                       >年化報酬率</label
                     >
                     <div class="input-with-suffix">
                       <input
-                        id="input-profit-rate"
+                      id="input-profit-rate"
                         type="string"
-                        class="text-field-5 w-input"
                         placeholder="年化報酬率"
                         value="0"
                       />
                     </div>
                   </div>
                   <div class="col-12 col-md-3">
-                    <label for="input-profit" class="field-label-7"
+                    <label for="input-profit" 
                       >預期報酬</label
                     >
-                    <div class="input-with-suffix profit">
+                    <div>
                       <input
-                        id="input-profit"
                         type="number"
-                        class="text-field-5 w-input"
                         placeholder="預期報酬"
                         disabled=""
                         value=""
-                      /><span>USDT</span>
+                      />
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -458,7 +450,28 @@
 
       <div class="faq">
         <div class="container">
-          <div class="row"></div>
+          <div class="row-col col-12">
+            <div class="row">
+              <p>1. What happens to my funds on the day I subscribe to a Savings product?</p>
+              <div class="arrow">▼</div>
+            </div>
+            <div class="row">
+              <p>2. What happens to my funds on the value date of a Locked Savings product?</p>
+              <div class="arrow">▼</div>
+            </div>
+            <div class="row">
+              <p>3. If I subscribe to a savings product, when can I redeem my funds?</p>
+              <div class="arrow">▼</div>
+            </div>
+            <div class="row">
+              <p>4. How is the average annual return (APR) calculated?</p>
+              <div class="arrow">▼</div>
+            </div>
+            <div class="row">
+              <p>5. How often do I receive interest from a flexible savings product?</p>
+              <div class="arrow">▼</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -467,7 +480,7 @@
       <div class="footer_wrap">
         <div class="logo">
           <a href="#">Bitrillion</a>
-          <select name="" id="">
+          <select name="lang">
             <option value="">English</option>
             <option value="">Chinese</option>
           </select>
