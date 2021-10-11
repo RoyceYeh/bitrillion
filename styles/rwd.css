@@ -1,3 +1,18 @@
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/* row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.row > * {
+  max-width: 100%;
+}
 /* Container */
 
 .container {
