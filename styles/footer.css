@@ -1,48 +1,41 @@
 footer {
   background: rgb(250, 250, 250);
-  overflow: hidden;
+  padding: 2rem;
 }
-footer .footer_wrap {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 2.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 3rem;
-}
-footer .footer_wrap .logo {
+
+footer .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-footer .footer_wrap .logo a {
+footer .logo a {
   font-size: 1.5rem;
   color: var(--main-color);
   font-weight: bold;
   padding: 1rem;
 }
 
-footer .footer_wrap .logo select {
+footer .logo select {
   padding: 0.5rem;
 }
 
-footer .footer_wrap .logo p {
+footer .logo p {
   padding: 1rem;
   color: var(--light-grey);
 }
 
-footer .footer_wrap .list {
+footer .list {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-footer .footer_wrap .list li:nth-child(1) {
+footer .list li:nth-child(1) {
   padding: 1rem 2rem;
   font-weight: bold;
 }
 
-footer .footer_wrap .list a {
+footer .list a {
   color: var(--light-grey);
   padding: 2rem;
   line-height: 1.5;
