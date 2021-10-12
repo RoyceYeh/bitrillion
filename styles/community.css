@@ -156,6 +156,17 @@ main img {
   width: 100%;
 }
 
+main .content {
+  max-height: 1615px;
+
+  overflow: scroll;
+}
+
+main .content::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 /* ******************* Sidebar ******************* */
 
 .date {
