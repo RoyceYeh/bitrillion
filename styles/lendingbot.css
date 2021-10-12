@@ -4,7 +4,7 @@ main .lending,
   height: 400px;
   max-height: 400px;
   margin: 0.25rem;
-  background: #eee;
+  background: rgb(250, 250, 250);
 }
 
 .history,
@@ -17,7 +17,7 @@ main .order,
 .offers {
   height: 280px;
   max-height: 280px;
-  background: #eee;
+  background: rgb(250, 250, 250);
   margin: 0.25rem;
 }
 
@@ -56,7 +56,7 @@ main .lending .search input {
   width: 100%;
   font-size: 1rem;
   border: 0.5px solid var(--border-color);
-  background: #eee;
+  background: #fff;
 }
 
 main .lending .ticker {
@@ -68,6 +68,10 @@ main .lending .ticker {
 main table {
   border-collapse: collapse;
   width: 100%;
+}
+
+main th {
+  cursor: pointer;
 }
 
 main th,
@@ -89,10 +93,15 @@ main .lending .ticker td img {
   color: #fff;
 }
 
+.order input {
+  width: 90%;
+}
+
 .submit {
   color: #fff;
   background-color: #098551;
   width: 80%;
+
   border: none;
   cursor: pointer;
 }
@@ -123,7 +132,7 @@ main .performance .status {
 }
 
 .detail .inner {
-  padding: 0.25rem;
+  padding: 4px;
   height: 100%;
-  background-color: #eee;
+  background-color: rgb(250, 250, 250);
 }
