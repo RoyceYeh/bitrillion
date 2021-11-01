@@ -37,7 +37,7 @@ td {
   text-align: left;
   padding: 1rem 0.2rem;
   border-bottom: 0.1px solid var(--border-color);
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 .sidebar td img {
   width: 30px;
@@ -76,7 +76,7 @@ td {
   .sidebar th,
   td {
     text-align: left;
-    padding: 1rem 6px;
+    padding: 1rem 0.5rem;
     font-size: 1rem;
   }
 }
