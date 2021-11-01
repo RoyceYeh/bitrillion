@@ -1,26 +1,56 @@
-.aln-center {
-  align-items: center;
+/* tag */
+.be-tag {
+  display: inline-block;
+  width: 6rem;
+  background: #ccf2e4;
+  color: var(--light-grey);
+  font-size: 0.5rem;
+  box-shadow: 0.1rem 0.15rem 0 0 rgb(0 0 0 / 15%);
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px;
 }
 
-.jc-center {
-  justify-content: center;
+.md-tag {
+  display: inline-block;
+  width: 6rem;
+  background: #fcf1ce;
+  color: var(--light-grey);
+  font-size: 0.5rem;
+  box-shadow: 0.1rem 0.15rem 0 0 rgb(0 0 0 / 15%);
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
 }
 
-.banner .container {
-  border-bottom: 1px solid var(--border-color);
+.ad-tag {
+  display: inline-block;
+  width: 6rem;
+  background: #facfcf;
+  color: var(--light-grey);
+  font-size: 0.5rem;
+  box-shadow: 0.1rem 0.15rem 0 0 rgb(0 0 0 / 15%);
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px;
 }
-section {
-  padding: 2rem;
-}
+
+/* banner */
+
 .banner p,
 span {
   line-height: 1.5;
   color: var(--light-grey);
 }
-.banner section {
+.banner .txt,
+.banner .pic {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 1rem;
+}
+.banner .feature .pic {
+  box-shadow: 0.2rem 0.2rem 0 0 rgb(0 0 0 / 15%);
 }
 .btn {
   display: block;
@@ -35,44 +65,11 @@ span {
   margin: 1rem 0;
   border: none;
 }
-.banner section img {
+.banner .feature .pic img {
   border-radius: 10px;
 }
-.be-tag {
-  display: inline-block;
-  width: 5rem;
-  background: #ccf2e4;
-  color: var(--light-grey);
-  font-size: 0.5rem;
-  box-shadow: 0.1rem 0.15rem 0 0 rgb(0 0 0 / 15%);
-  text-align: center;
-  padding: 0.5rem 0.75rem;
-  border-radius: 15px;
-}
 
-.md-tag {
-  display: inline-block;
-  width: 5rem;
-  background: #fcf1ce;
-  color: var(--light-grey);
-  font-size: 0.5rem;
-  box-shadow: 0.1rem 0.15rem 0 0 rgb(0 0 0 / 15%);
-  text-align: center;
-  padding: 0.5rem 0.5rem;
-  border-radius: 15px;
-}
-
-.ad-tag {
-  display: inline-block;
-  width: 5rem;
-  background: #facfcf;
-  color: var(--light-grey);
-  font-size: 0.5rem;
-  box-shadow: 0.1rem 0.15rem 0 0 rgb(0 0 0 / 15%);
-  text-align: center;
-  padding: 0.5rem 0.75rem;
-  border-radius: 15px;
-}
+/* latest */
 
 .latest .card {
   margin-top: 1rem;
@@ -96,6 +93,7 @@ span {
 
 .latest .box h3 {
   flex-grow: 1;
+  font-size: 2rem;
 }
 .latest .box .box-bottom {
   display: flex;
@@ -107,68 +105,170 @@ span {
   border-radius: 15px;
 }
 
-/* ************ main ************** */
-main {
-  margin: 2rem 0;
-  background: var(--main-color);
+/* ************ category ************** */
+.category {
+  background: var(--dark-blue);
 }
 
-main .container {
+.category .container {
   padding: 1rem 0;
 }
 
-main .topic {
-  flex-wrap: nowrap;
+.category .topic {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.category .theme {
   padding: 1rem;
 }
 
-main .topic p {
-  color: #fff;
-  font-size: 1rem;
-  margin-right: 0.5rem;
-}
-
-main .topic .hashtag {
+.category .theme .hashtag {
   font-size: 0.25rem;
   width: 7rem;
-  background: var(--main-color);
+  background: var(--light-blue);
   border-radius: 20px;
   padding: 0.1rem 0.5rem;
   margin: 0;
   cursor: pointer;
 }
-main .topic > .row {
+.category .theme > .row {
   gap: 0.5rem;
+  justify-content: center;
 }
 
-main .card {
+.category .post {
   display: flex;
   flex-wrap: wrap;
   row-gap: 1rem;
-}
-
-/* slang */
-
-.slang .row .col .row {
-  border-radius: 15px;
-  margin: 1rem;
-}
-
-.slang .row .col:nth-child(1) .row {
-  background: #ccf2e4;
-}
-.slang .row .col:nth-child(2) .row {
-  background: #facfcf;
-}
-.slang .row .col .row p {
-  padding: 0.5rem 0;
-}
-
-.slang section {
   line-height: 1.5;
 }
 
-.slang section h3 {
+.category .writing .box {
+  background: #0061b1;
+  border-radius: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category .writing img {
+  border-radius: 15px;
+}
+
+.category .writing .txt {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.category .writing h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.category .writing .box-bottom {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.category .more {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 2.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .category .topic {
+    text-align: left;
+    padding: 1.5rem 0;
+  }
+
+  .category .theme > .row {
+    margin: 0;
+  }
+
+  .category .theme .hashtag {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .category .writing {
+    padding: 1rem;
+  }
+  .category .theme .hashtag {
+    font-size: 1rem;
+  }
+  .category .theme > .row {
+    gap: 0.5rem;
+    justify-content: inherit;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .category .writing h3 {
+    font-size: 1.5rem;
+  }
+
+  .category .writing .txt {
+    justify-content: center;
+  }
+  .category .writing .row_box {
+    flex-direction: row;
+  }
+
+  .category .writing .row_box .pic {
+    width: 65%;
+  }
+
+  .category .writing .row_box .pic img {
+    height: 100%;
+  }
+}
+/* slang */
+
+.slang .rectangle {
+  display: flex;
+  padding: 0.25rem;
+  margin: 1rem;
+}
+.slang .rectangle .item {
+  display: flex;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.slang .rectangle .green {
+  background: #ccf2e4;
+}
+.slang .rectangle .pink {
+  background: #facfcf;
+}
+
+.slang .rectangle .item .pic {
+  width: 50%;
+  margin: auto 0;
+}
+
+.slang .rectangle .item .txt {
+  width: 50%;
+  margin: auto 0;
+  line-height: 1.5;
+}
+
+.slang .rectangle .item .txt a {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.slang h3 {
   font-weight: bold;
   color: #000;
 }
@@ -184,11 +284,11 @@ main .card {
   padding: 0.5rem;
 }
 
-/* glossary */
-
-.glossary {
+@media screen and (min-width: 992px) {
+  .slang .rectangle {
+    margin: 0;
+  }
 }
-
 /* subscribe */
 
 .subscribe {
@@ -227,4 +327,13 @@ main .card {
   text-align: center;
   padding: 0.5rem;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .subscribe .container .row {
+    gap: 0;
+  }
+
+  .subscribe .txt {
+    padding: 1.5rem;
+  }
 }

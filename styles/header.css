@@ -1,5 +1,11 @@
+/* #control,
+#trade-control {
+  position: fixed;
+  z-index: -10;
+  opacity: 0;
+}
+
 header {
-  margin: auto;
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
@@ -7,90 +13,410 @@ header {
   background-color: #fff;
   z-index: 5;
 }
+
 nav {
-  margin: auto;
-  max-width: var(--max-width);
-  padding: 1rem 2.5rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
-nav .logo {
+
+header .logo a {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
-nav .logo a {
+
+header .logo img {
+  width: 40px;
+  height: 60px;
+}
+
+header .logo p {
   font-size: 1.5rem;
-  color: var(--main-color);
   font-weight: bold;
-}
-nav .logo img {
-  width: 50px;
-}
-
-nav .menu ul {
-  display: flex;
-  gap: 1rem;
-}
-
-nav .menu ul li {
-  position: relative;
-  display: inline-block;
-  padding: 1rem;
-}
-nav .menu ul li a {
-  color: var(--light-grey);
-}
-
-nav .menu ul li a:hover {
   color: var(--main-color);
 }
 
-/* dropdown */
-
-nav .menu ul ul {
-  display: none;
-  position: absolute;
-  top: 40px;
-  background-color: #fff;
-  border: 0.5px solid var(--border-color);
-}
-
-nav .menu ul li:hover > ul {
-  display: inherit;
-}
-
-nav .menu ul ul li:hover {
-  background-color: var(--main-color);
-  color: #fff;
-}
-
-nav .menu ul ul li:hover a {
-  color: #fff;
-}
-
-nav .login {
+header .btn_group {
   display: flex;
   align-items: center;
-  gap: 1rem;
-}
-nav .login a {
-  color: var(--light-grey);
+  font-size: 1rem;
 }
 
-nav .login a:hover {
-  color: var(--main-color);
+header .btn_group .login {
+  display: none;
 }
 
-nav .login button {
+header .started {
+  padding-left: 0.5rem;
+}
+
+header .started > a {
+  display: block;
   border: none;
   background-color: var(--main-color);
   color: #fff;
   padding: 0.75rem;
 }
 
-nav .login button:hover {
+header .control {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #000;
+}
+
+header .control img {
+  height: 50px;
+  width: 100%;
+}
+
+.trade-control {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
   cursor: pointer;
+}
+
+header .menu {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: -1000%;
+  right: 0;
+  transition: 1s ease;
+}
+
+header .menu li {
+  display: block;
+  color: gray;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 0.1px solid var(--border-color);
+}
+
+header .menu li a {
+  text-decoration: none;
+  color: gray;
+}
+
+header .menu ul li .trade-control ul {
+  max-height: 0px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -100%;
+}
+
+#trade-control:checked ~ header .menu ul li ul {
+  position: static;
+  max-height: 500px;
+  transition: 1s ease;
+}
+
+#control:checked + header .menu {
+  top: 60px;
+}
+
+@media screen and (min-width: 576px) {
+  header .btn_group .login {
+    display: inherit;
+  }
+
+  header .logo {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .btn_group {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .control {
+    display: none;
+  }
+
+  header .logo {
+    flex-grow: 0;
+  }
+
+  header .row {
+    justify-content: space-between;
+  }
+
+  header .menu {
+    position: static;
+    transition: 0s;
+    width: auto;
+  }
+
+  header .menu ul {
+    display: flex;
+    align-items: center;
+  }
+
+  header .menu li {
+    border: none;
+    padding: 10px;
+    width: auto;
+  }
+
+  header .menu li:hover {
+    color: var(--main-color);
+    cursor: pointer;
+  }
+
+  header .menu li > a:hover {
+    color: var(--main-color);
+  }
+
+  header .btn_group {
+    order: 1;
+    padding-right: 0;
+  }
+
+  header .btn_group .login {
+    color: gray;
+  }
+
+  header .btn_group a:hover {
+    color: var(--main-color);
+  }
+
+  header .btn_group .started a:hover {
+    color: #fff;
+  }
+
+  header .menu ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 0.5px solid var(--border-color);
+  }
+  #trade-control:checked ~ header .menu ul li ul {
+    display: inherit;
+    position: absolute;
+    top: 30px;
+  }
+
+  header .menu .trade-control ul li {
+    border: none;
+    padding: 15px;
+    width: auto;
+    border-bottom: 0.1px solid var(--border-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .menu li {
+    margin: 10px;
+  }
+} */
+
+header {
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+nav {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .logo a p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+nav .logo img {
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+}
+
+nav .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .menu ul li {
+  padding: 0 12px;
+  text-align: center;
+  display: block;
+}
+
+nav .menu ul li a {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+nav .menu ul li a:hover {
+  border-bottom: 3px solid var(--main-color);
+}
+
+nav .btn_group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .btn_group .login {
+  font-size: 1.2rem;
+  color: gray;
+}
+nav .btn_group .login:hover {
+  border-bottom: 3px solid var(--main-color);
+}
+nav .started a {
+  display: block;
+  border: none;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 0.75rem;
+}
+.hamBar {
+  display: none;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  nav .logo a {
+    gap: 0.5rem;
+  }
+  nav .logo a p {
+    font-size: 1.25rem;
+  }
+
+  nav .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  nav .btn_group {
+    gap: 0.2rem;
+  }
+  nav .btn_group .login {
+    font-size: 1rem;
+  }
+  nav .started a {
+    padding: 0.5rem;
+  }
+  nav .menu ul li {
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  nav .logo a p {
+    font-size: 1.5rem;
+  }
+  .hamBar {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 59px;
+    left: 0;
+    right: 0;
+  }
+
+  nav .menu ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    transform: translateY(100%);
+    transition: all 0.5s;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  nav .menu ul.show {
+    height: 100vh;
+    transition: all 0.5s;
+  }
+  nav .menu ul li {
+    padding: 1.25rem;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #fff;
+  }
+
+  nav .menu ul li a {
+    font-size: 1.25rem;
+    color: gray;
+  }
+
+  nav .btn_group {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 59px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 0.4s;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  nav .btn_group.show {
+    height: 400px;
+    transition: all 0.4s;
+  }
+
+  nav .btn_group .login {
+    font-size: 1.2rem;
+    color: gray;
+    display: block;
+    padding: 1rem;
+    width: 90%;
+    text-align: center;
+    border: 1px solid var(--main-color);
+  }
+
+  nav .btn_group .started {
+    width: 90%;
+    text-align: center;
+  }
+
+  nav .btn_group .started a {
+    padding: 1rem;
+  }
 }

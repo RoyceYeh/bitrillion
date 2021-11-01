@@ -129,11 +129,11 @@ table {
   border-spacing: 0;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -147,9 +147,16 @@ a {
   line-height: 1.5;
 }
 
+section {
+  padding: 5rem 0;
+}
+
 :root {
   --max-width: 1200px;
   --main-color: #0052fe;
   --light-grey: #a0a0a0;
   --border-color: #c4c4c4;
+  --light-blue: #2fa7fe;
+  --dark-blue: #001e36;
+  --footer-color: #eee;
 }

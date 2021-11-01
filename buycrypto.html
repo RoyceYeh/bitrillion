@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bitrillion</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+    ></script>
     <!-- css reset -->
     <link rel="stylesheet" href="styles/reset.css" />
     <!-- font-style -->
@@ -18,496 +24,171 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <a href="https://royceyeh.github.io/bitrillion/index"
-            ><img src="pic/logo.svg" alt="logo"
-          /></a>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="https://royceyeh.github.io/bitrillion/"
+              ><img src="pic/logo.svg" alt="logo" />
+              <p>Bitrillion</p>
+            </a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="https://royceyeh.github.io/bitrillion/buycrypto"
+                  >Buy Crypto</a
+                >
+              </li>
+              <li>
+                <a href="https://royceyeh.github.io/bitrillion/lendingbot"
+                  >Lending Bot</a
+                >
+              </li>
+              <li>
+                <a href="https://royceyeh.github.io/bitrillion/earn"
+                  >Bitrillion Earn</a
+                >
+              </li>
+              <li>
+                <a href="https://royceyeh.github.io/bitrillion/academy"
+                  >Academy</a
+                >
+              </li>
 
-          <a href="https://royceyeh.github.io/bitrillion/index">Bitrillion</a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="https://royceyeh.github.io/bitrillion/buycrypto"
-                >Buy Crypto</a
-              >
-            </li>
-            <li>
-              <a href="">Trade</a>
-              <ul>
-                <li>
-                  <a href="https://royceyeh.github.io/bitrillion/lendingbot"
-                    >Lending Bot</a
-                  >
-                </li>
-                <li>
-                  <a href="https://royceyeh.github.io/bitrillion/earn"
-                    >Bitrillion Earn</a
-                  >
-                </li>
-                <li><a href="">Trading Bot</a></li>
-                <li><a href="">Crypto Exchange</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="https://royceyeh.github.io/bitrillion/academy"
-                >Academy</a
-              >
-            </li>
-            <li><a href="">Reseach</a></li>
-            <li>
-              <a href="https://royceyeh.github.io/bitrillion/community"
-                >Community</a
-              >
-            </li>
-            <li>
-              <a href="https://royceyeh.github.io/bitrillion/whoweare"
-                >Who we are</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="login">
-          <a href="">Login</a>
-          <button>Get started</button>
-        </div>
-      </nav>
+              <li>
+                <a href="https://royceyeh.github.io/bitrillion/community"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a href="https://royceyeh.github.io/bitrillion/whoweare"
+                  >Who we are</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="btn_group">
+            <a class="login" href="#"> Login </a>
+            <div class="started">
+              <a href="">Get started</a>
+            </div>
+          </div>
+          <a class="hamBar" href="#"><i class="fas fa-bars"></i></a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <div class="sidebar" id="sidebar">
-        <ul class="nav" id="nav">
-          <li>
-            <a href=""
-              ><img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="logo"
-            /></a>
-            <p>BTC</p>
-            <span>50234</span>
-            <span>1.99%</span>
-          </li>
-
-          <li>
-            <a href=""
-              ><img src="pic/crypto-icon/ethereum-eth-logo.svg" alt="logo"
-            /></a>
-            <p>ETH</p>
-            <span>3493</span>
-            <span>-0.72%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/Binance-CoinBNB.svg" alt="logo"
-            /></a>
-            <p>BNB</p>
-            <span>453</span>
-            <span>1.55%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/SOL-exchange.svg" alt="logo"
-            /></a>
-            <p>SOL</p>
-            <span>157.05</span>
-            <span>-4.55%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/axie-infinity-axs-logo.svg" alt="logo"
-            /></a>
-            <p>AXS</p>
-            <span>124.10</span>
-            <span>6.46%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/ftx-token-ftt-logo.svg" alt="logo"
-            /></a>
-            <p>FTT</p>
-            <span>57.25</span>
-            <span>-2.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/terra-luna-luna-logo.svg" alt="logo"
-            /></a>
-            <p>LUNA</p>
-            <span>42.494</span>
-            <span>4.96%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/avalanche-avax-logo.svg" alt="logo"
-            /></a>
-            <p>AVAX</p>
-            <span>62.265</span>
-            <span>-3.87%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/polkadot-new-dot-logo.svg" alt="logo"
-            /></a>
-            <p>DOT</p>
-            <span>30.666</span>
-            <span>2.23%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/litecoin-ltc-logo.svg" alt="logo"
-            /></a>
-            <p>LTC</p>
-            <span>173.42</span>
-            <span>-0.06%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/serum-srm-logo.svg" alt="logo"
-            /></a>
-            <p>SRM</p>
-            <span>8.097</span>
-            <span>4.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/filecoin-fil-logo.svg" alt="logo"
-            /></a>
-            <p>FIL</p>
-            <span>70.005</span>
-            <span>-1.39%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/fantom-ftm-logo.svg" alt="logo"
-            /></a>
-            <p>FTM</p>
-            <span>1.375</span>
-            <span>2.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/ftx-token-ftt-logo.svg" alt="logo"
-            /></a>
-            <p>FTT</p>
-            <span>57.105</span>
-            <span>-2.62%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/aave-aave-logo.svg" alt="logo"
-            /></a>
-            <p>AAVE</p>
-            <span>300.08</span>
-            <span>2.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/uniswap-uni-logo.svg" alt="logo"
-            /></a>
-            <p>UNI</p>
-            <span>25.502</span>
-            <span>-3.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/tether_usdt_icon.svg" alt="logo"
-            /></a>
-            <p>USDT</p>
-            <span>28</span>
-            <span>1.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/pancakeswap-cake-logo.svg" alt="logo"
-            /></a>
-            <p>CAKE</p>
-            <span>19.534</span>
-            <span>-2.76%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/flow-flow-logo.svg" alt="logo"
-            /></a>
-            <p>FLOW</p>
-            <span>19.684</span>
-            <span>2.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/balancer-bal-logo.svg" alt="logo"
-            /></a>
-            <p>BAL</p>
-            <span>21.845</span>
-            <span>-1.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/chainlink-link-logo.svg" alt="logo"
-            /></a>
-            <p>LINK</p>
-            <span>26.845</span>
-            <span>3.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/usd-coin-usdc-logo.svg" alt="logo"
-            /></a>
-            <p>USDC</p>
-            <span>26.845</span>
-            <span>-3.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/tron-trx-logo.svg" alt="logo"
-            /></a>
-            <p>TRON</p>
-            <span>0.345</span>
-            <span>3.40%</span>
-          </li>
-          <li>
-            <a href=""
-              ><img src="pic/crypto-icon/bitcoin-btc-logo.svg" alt="logo"
-            /></a>
-            <p>BTC</p>
-            <span>50234</span>
-            <span>1.99%</span>
-          </li>
-
-          <li>
-            <a href=""
-              ><img src="pic/crypto-icon/ethereum-eth-logo.svg" alt="logo"
-            /></a>
-            <p>ETH</p>
-            <span>3493</span>
-            <span>-0.72%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/Binance-CoinBNB.svg" alt="logo"
-            /></a>
-            <p>BNB</p>
-            <span>453</span>
-            <span>1.55%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/SOL-exchange.svg" alt="logo"
-            /></a>
-            <p>SOL</p>
-            <span>157.05</span>
-            <span>-4.55%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/axie-infinity-axs-logo.svg" alt="logo"
-            /></a>
-            <p>AXS</p>
-            <span>124.10</span>
-            <span>6.46%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/ftx-token-ftt-logo.svg" alt="logo"
-            /></a>
-            <p>FTT</p>
-            <span>57.25</span>
-            <span>-2.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/terra-luna-luna-logo.svg" alt="logo"
-            /></a>
-            <p>LUNA</p>
-            <span>42.494</span>
-            <span>4.96%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/avalanche-avax-logo.svg" alt="logo"
-            /></a>
-            <p>AVAX</p>
-            <span>62.265</span>
-            <span>-3.87%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/polkadot-new-dot-logo.svg" alt="logo"
-            /></a>
-            <p>DOT</p>
-            <span>30.666</span>
-            <span>2.23%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/litecoin-ltc-logo.svg" alt="logo"
-            /></a>
-            <p>LTC</p>
-            <span>173.42</span>
-            <span>-0.06%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/serum-srm-logo.svg" alt="logo"
-            /></a>
-            <p>SRM</p>
-            <span>8.097</span>
-            <span>4.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/filecoin-fil-logo.svg" alt="logo"
-            /></a>
-            <p>FIL</p>
-            <span>70.005</span>
-            <span>-1.39%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/fantom-ftm-logo.svg" alt="logo"
-            /></a>
-            <p>FTM</p>
-            <span>1.375</span>
-            <span>2.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/ftx-token-ftt-logo.svg" alt="logo"
-            /></a>
-            <p>FTT</p>
-            <span>57.105</span>
-            <span>-2.62%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/aave-aave-logo.svg" alt="logo"
-            /></a>
-            <p>AAVE</p>
-            <span>300.08</span>
-            <span>2.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/uniswap-uni-logo.svg" alt="logo"
-            /></a>
-            <p>UNI</p>
-            <span>25.502</span>
-            <span>-3.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/tether_usdt_icon.svg" alt="logo"
-            /></a>
-            <p>USDT</p>
-            <span>28</span>
-            <span>1.36%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/pancakeswap-cake-logo.svg" alt="logo"
-            /></a>
-            <p>CAKE</p>
-            <span>19.534</span>
-            <span>-2.76%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/flow-flow-logo.svg" alt="logo"
-            /></a>
-            <p>FLOW</p>
-            <span>19.684</span>
-            <span>2.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/balancer-bal-logo.svg" alt="logo"
-            /></a>
-            <p>BAL</p>
-            <span>21.845</span>
-            <span>-1.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/chainlink-link-logo.svg" alt="logo"
-            /></a>
-            <p>LINK</p>
-            <span>26.845</span>
-            <span>3.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/usd-coin-usdc-logo.svg" alt="logo"
-            /></a>
-            <p>USDC</p>
-            <span>26.845</span>
-            <span>-3.40%</span>
-          </li>
-          <li>
-            <a href="">
-              <img src="pic/crypto-icon/tron-trx-logo.svg" alt="logo"
-            /></a>
-            <p>TRON</p>
-            <span>0.345</span>
-            <span>3.40%</span>
-          </li>
-        </ul>
-        <label for="side-menu-switch">
-          <i class="fa fa-angle-right"></i>
-        </label>
-      </div>
-
-      <div class="trade">
-        <div class="crypto_form">
-          <div class="buybar">
-            <div class="logo">
-              <img
-                src="pic/crypto-icon/bitcoin_blockchain_icon.svg"
-                alt="logo"
-              />
-              <p>Bitcoin</p>
-            </div>
-            <div class="btn">
-              <button>Buy</button>
-              <button>Sell</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 col-lg-4">
+            <div class="sidebar">
+              <table class="aside">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
             </div>
           </div>
+          <div class="col-12 col-md-7 col-lg-8">
+            <div class="trade">
+              <div class="crypto_form">
+                <div class="buybar">
+                  <div class="logo">
+                    <div class="pic">
+                      <img
+                        src="pic/crypto-icon/bitcoin_blockchain_icon.svg"
+                        alt="logo"
+                      />
+                    </div>
 
-          <div class="chart">
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-              <div id="tradingview_ef0ee"></div>
-              <div class="tradingview-widget-copyright">
-                <a
-                  href="https://www.tradingview.com/symbols/BTCUSD/?exchange=COINBASE"
-                  rel="noopener"
-                  target="_blank"
-                  ><span class="blue-text">BTCUSD Chart</span></a
-                >
-                by TradingView
+                    <p>Bitcoin</p>
+                  </div>
+                  <div class="btn">
+                    <button>Buy</button>
+                    <button>Sell</button>
+                  </div>
+                </div>
+
+                <div class="chart">
+                  <!-- TradingView Widget BEGIN -->
+                  <div class="tradingview-widget-container">
+                    <div id="tradingview_90ec6"></div>
+                    <div class="tradingview-widget-copyright">
+                      <a
+                        href="https://tw.tradingview.com/symbols/BTCUSD/?exchange=COINBASE"
+                        rel="noopener"
+                        target="_blank"
+                        ><span class="blue-text">BTCUSD 圖表</span></a
+                      >由TradingView提供
+                    </div>
+                    <script
+                      type="text/javascript"
+                      src="https://s3.tradingview.com/tv.js"
+                    ></script>
+                    <script type="text/javascript">
+                      new TradingView.widget({
+                        width: "100%",
+                        height: "60%",
+                        symbol: "COINBASE:BTCUSD",
+                        interval: "D",
+                        timezone: "Etc/UTC",
+                        theme: "light",
+                        style: "1",
+                        locale: "zh_TW",
+                        toolbar_bg: "#f1f3f6",
+                        enable_publishing: false,
+                        save_image: false,
+                        container_id: "tradingview_90ec6",
+                      });
+                    </script>
+                  </div>
+                  <!-- TradingView Widget END -->
+
+                  <!-- TradingView Widget BEGIN -->
+                  <!-- <div class="tradingview-widget-container">
+                    <div id="tradingview_ef0ee"></div>
+                    <div class="tradingview-widget-copyright">
+                      <a
+                        href="https://www.tradingview.com/symbols/BTCUSD/?exchange=COINBASE"
+                        rel="noopener"
+                        target="_blank"
+                        ><span class="blue-text">BTCUSD Chart</span></a
+                      >
+                      by TradingView
+                    </div>
+                    <script
+                      type="text/javascript"
+                      src="https://s3.tradingview.com/tv.js"
+                    ></script>
+                    <script type="text/javascript">
+                      new TradingView.widget({
+                        width: "100%",
+                        height: "100%",
+                        symbol: "COINBASE:BTCUSD",
+                        interval: "D",
+                        timezone: "Etc/UTC",
+                        theme: "light",
+                        style: "1",
+                        locale: "en",
+                        toolbar_bg: "#f1f3f6",
+                        enable_publishing: false,
+                        hide_side_toolbar: false,
+                        save_image: false,
+                        container_id: "tradingview_ef0ee",
+                      });
+                    </script>
+                  </div> -->
+                  <!-- TradingView Widget END -->
+                </div>
               </div>
-              <script
-                type="text/javascript"
-                src="https://s3.tradingview.com/tv.js"
-              ></script>
-              <script type="text/javascript">
-                new TradingView.widget({
-                  width: "100%",
-                  height: "100%",
-                  symbol: "COINBASE:BTCUSD",
-                  interval: "D",
-                  timezone: "Etc/UTC",
-                  theme: "light",
-                  style: "1",
-                  locale: "en",
-                  toolbar_bg: "#f1f3f6",
-                  enable_publishing: false,
-                  hide_side_toolbar: false,
-                  save_image: false,
-                  container_id: "tradingview_ef0ee",
-                });
-              </script>
             </div>
-            <!-- TradingView Widget END -->
           </div>
         </div>
 
@@ -518,14 +199,8 @@
             <div class="tab_content">
               <h3>Lorem ipsum dolor</h3>
               <p>
-                sit amet consectetur adipisicing elit. Labore amet assumenda
-                necessitatibus mollitia perferendis nam sequi ab pariatur
-                molestiae minima voluptates tempore aperiam ipsum ipsam illo sit
-                earum dolor, tempora aliquid totam! Veritatis, placeat. Animi
-                praesentium ipsam eius quisquam in nobis doloremque dolorem
-                deserunt, optio quo corrupti accusantium dolore! Rerum laborum
-                quo hic voluptatem maxime amet ipsum omnis inventore, ab
-                praesentium fugit iste voluptatibus quidem assumenda alias
+                sit amet consectetur adipisicing elit. Labore amet assumendae,
+                ab praesentium fugit iste voluptatibus quidem assumenda alias
                 dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Provident, dolorum illo perferendis ipsa vero, vel repellat
                 molestiae architecto rem magni neque distinctio nemo?
@@ -586,7 +261,6 @@
         </div>
       </div>
     </main>
-
     <footer>
       <div class="container">
         <div class="row">
@@ -599,7 +273,7 @@
             <p>©copyright</p>
           </div>
           <div class="col-12 col-md-8 list">
-            <div class="col-12 col-md-4 company">
+            <div class="col-md-4 company">
               <ul>
                 <li>About</li>
                 <li><a href="#">Careers</a></li>
@@ -608,7 +282,7 @@
                 <li><a href="#">Cookie policy</a></li>
               </ul>
             </div>
-            <div class="col-12 col-md-4 support">
+            <div class="col-md-4 support">
               <ul>
                 <li>Help center</li>
                 <li><a href="#">Contact us</a></li>
@@ -617,7 +291,7 @@
                 <li><a href="#">ID verification</a></li>
               </ul>
             </div>
-            <div class="col-12 col-md-4 business">
+            <div class="col-md-4 business">
               <ul>
                 <li>Prime</li>
                 <li><a href="#">Investors</a></li>
@@ -630,5 +304,56 @@
         </div>
       </div>
     </footer>
+    <script>
+      const BASE_URL =
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
+
+      const tbody = document.getElementById("tbody");
+      getCrypto(BASE_URL);
+      function getCrypto(url) {
+        fetch(url, {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then(function (response) {
+            response.json().then(function (data) {
+              console.log(data);
+              showCrypto(data);
+            });
+          })
+          .catch(function (err) {
+            console.log("error");
+          });
+      }
+
+      function showCrypto(data) {
+        tbody.innerHTML = "";
+
+        data.forEach((coin) => {
+          const {
+            name,
+            image,
+            symbol,
+            current_price,
+            price_change_percentage_24h,
+          } = coin;
+          const coinEl = document.createElement("tr");
+          coinEl.classList.add("coin");
+          coinEl.innerHTML = `
+       
+          <td><img src="${image}" alt=""></td>
+          <td>${symbol}</td>
+          <td>${current_price}</td>
+          <td id="change">${price_change_percentage_24h}</td>
+       
+  `;
+
+          tbody.appendChild(coinEl);
+        });
+      }
+    </script>
+    <script src="app.js"></script>
   </body>
 </html>

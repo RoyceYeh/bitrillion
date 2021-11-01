@@ -1,94 +1,207 @@
-main .lending,
+.lending,
 .stats,
 .performance {
-  height: 400px;
-  max-height: 400px;
+  height: 300px;
+  max-height: 300px;
   margin: 0.25rem;
   background: rgb(250, 250, 250);
 }
 
 .history,
 .provided {
-  height: 400px;
-  max-height: 400px;
+  height: 300px;
+  max-height: 300px;
 }
 
-main .order,
+.order,
 .offers {
-  height: 280px;
-  max-height: 280px;
+  height: 180px;
+  max-height: 180px;
   background: rgb(250, 250, 250);
   margin: 0.25rem;
 }
 
 .content {
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .name {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
-  border-bottom: 0.5px solid var(--border-color);
-  padding-bottom: 0.25rem;
+  padding: 0.5rem 0;
+  gap: 1rem;
 }
 .name p {
   font-weight: bold;
 }
 
-main .lending .name .btn {
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgb(250, 250, 250);
+  cursor: pointer;
+  border-bottom: 0.1px solid var(--border-color);
+}
+
+.left th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 0.1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+.right th,
+td {
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .lending,
+  .stats,
+  .performance {
+    height: 375px;
+    max-height: 375px;
+  }
+
+  .history,
+  .provided {
+    height: 375px;
+    max-height: 375px;
+  }
+
+  .order,
+  .offers {
+    height: 240px;
+    max-height: 240px;
+  }
+  .name p {
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+  .left th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 0.1px solid var(--border-color);
+    font-size: 1.15rem;
+  }
+
+  .right th,
+  td {
+    font-size: 1.15rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lending,
+  .stats,
+  .performance {
+    height: 400px;
+    max-height: 400px;
+  }
+
+  .history,
+  .provided {
+    height: 400px;
+    max-height: 400px;
+  }
+
+  .order,
+  .offers {
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .left th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 0.1px solid var(--border-color);
+    font-size: 1.25rem;
+  }
+
+  .right th,
+  td {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
+
+/* ----------------------left-------------------- */
+
+/* lending */
+
+.lending .name .btn {
   display: inline-block;
   background: var(--main-color);
   color: #fff;
   border: 0;
   font-size: 1rem;
-  box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
   text-align: center;
   letter-spacing: 0.5px;
   padding: 0.2rem 1rem;
 }
 
-main .lending .search {
+.lending .search {
   padding-top: 0.2rem;
 }
 
-main .lending .search input {
+.lending .search input {
   width: 100%;
   font-size: 1rem;
-  border: 0.5px solid var(--border-color);
+  border: 0.25px solid var(--border-color);
   background: #fff;
 }
 
-main .lending .ticker {
-  max-height: 320px;
+.lending .ticker {
+  max-height: 200px;
+  overflow: scroll;
   overflow: scroll;
   overflow-x: hidden;
-}
-
-main table {
-  border-collapse: collapse;
   width: 100%;
 }
 
-main th {
-  cursor: pointer;
+.lending .ticker td img {
+  width: 30px;
+  height: 30px;
 }
 
-main th,
-td {
-  text-align: left;
-  padding: 16px;
-  border-bottom: 0.1px solid var(--border-color);
+@media screen and (min-width: 768px) {
+  .lending .ticker {
+    max-height: 280px;
+  }
+
+  .lending .ticker td img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lending .ticker {
+    max-height: 310px;
+  }
 }
 
-main .lending .ticker td img {
-  width: 20px;
-  height: 20px;
-}
-
-.chart {
-  width: 100%;
-  min-height: 400px;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .lending .name .btn {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 /* order */
@@ -100,19 +213,24 @@ main .lending .ticker td img {
 
 .order input {
   width: 90%;
+  padding: 0.5rem;
+}
+
+.order .confirm input::placeholder {
+  font-size: 0.25rem;
 }
 
 .submit {
   color: #fff;
   background-color: #098551;
   width: 80%;
-
   border: none;
   cursor: pointer;
 }
 
 .order label {
   cursor: pointer;
+  font-size: 1rem;
 }
 .order .content {
   height: 100%;
@@ -121,15 +239,81 @@ main .lending .ticker td img {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
 }
 
-/* right */
+.order .confirm {
+  display: flex;
+}
 
-main .performance .status {
-  max-height: 320px;
+@media screen and (min-width: 768px) {
+  .order .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .order label {
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+}
+
+/*-------------- right------------- */
+
+/* performance */
+
+.performance .status {
+  max-height: 240px;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .performance .status {
+    max-height: 320px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .performance .status {
+    max-height: 340px;
+  }
+}
+
+/* offer */
+
+.offers .status {
+  max-height: 100px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .offers .status {
+    max-height: 180px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 992px) {
+  .offers .status {
+    max-height: 240px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.right th,
+td {
+  font-size: 1x;
+}
+
+/* detail */
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .detail .content {
@@ -140,4 +324,21 @@ main .performance .status {
   padding: 4px;
   height: 100%;
   background-color: rgb(250, 250, 250);
+}
+
+.detail .status {
+  max-height: 230px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .detail .status {
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .detail .status {
+    max-height: 330px;
+  }
 }

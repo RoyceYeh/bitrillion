@@ -1,19 +1,4 @@
-.aln-center {
-  align-items: center;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
 /* banner */
-
-.banner {
-  padding: 2rem 0;
-}
-.banner h1 {
-  color: var(--main-color);
-}
 
 .btn {
   max-width: 300px;
@@ -29,12 +14,27 @@
   padding: 0.85rem 2.75rem;
 }
 
-.txt {
+.banner .txt {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 3rem;
 }
+
+.banner h1 {
+  padding-bottom: 2rem;
+  color: var(--main-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .banner .row {
+    align-items: center;
+  }
+}
+
 /* action */
+
 .action {
   background: rgb(250, 250, 250);
   line-height: 1.5;
@@ -48,6 +48,7 @@
   padding: 1rem 0;
   color: var(--main-color);
   font-weight: bold;
+  width: 100%;
 }
 
 .action .map {
@@ -63,23 +64,42 @@
 
 .action .map .icon {
   color: var(--main-color);
+  display: flex;
+  align-items: center;
 }
 
 .action .map li p {
   padding-right: 1rem;
 }
 
-.action .map .num .line {
-  width: 100%;
-  height: 1px;
-  background-color: var(--main-color);
+.action .feature {
+  margin: auto;
 }
 
-.action .feature {
-  display: flex;
+.action .feature p {
   padding-bottom: 1rem;
 }
+
+@media screen and (min-width: 576px) {
+  .action .feature div {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .action .map ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .action .feature div {
+    gap: 3rem;
+  }
+}
+
 /* product */
+
 .product {
   padding: 2rem 0;
   background: rgb(250, 250, 250);
@@ -145,7 +165,6 @@
 
 /* counter */
 .counter {
-  padding: 2rem 0;
   background: rgb(250, 250, 250);
 }
 .counter h2 {
@@ -153,12 +172,36 @@
   padding: 2rem 0;
 }
 
+.counter .calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: auto;
+}
+
+.counter .calculator .fill {
+  margin: auto;
+}
+
+.counter label {
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .counter .calculator {
+    flex-direction: row;
+  }
+}
+
 /* faq */
 .faq {
   padding: 2rem 0;
 }
 .faq .container .row-col {
-  justify-content: center;
+  margin: auto;
 }
 .faq .container .row-col .row {
   justify-content: space-between;
@@ -166,4 +209,23 @@
   border-bottom: 1px solid var(--border-color);
   cursor: pointer;
   font-size: 1.25rem;
+}
+
+.faq p {
+  font-size: 1rem;
+}
+
+.faq .arrow {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .faq p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .faq .arrow {
+    display: initial;
+  }
 }

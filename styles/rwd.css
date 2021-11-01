@@ -8,7 +8,8 @@ svg {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  margin-right: calc(-1 * 0.75rem);
+  margin-left: calc(-1 * 0.75rem);
 }
 .row > * {
   max-width: 100%;
@@ -18,53 +19,83 @@ svg {
   flex-direction: column;
 }
 
+.jc-center {
+  justify-content: center;
+}
+
+.aln-center {
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  section {
+    padding: 4rem 0;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 3.75rem 0;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 3.5rem 0;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    padding: 3rem 0;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
 /* Container */
 
 .container {
   margin: 0 auto;
-  max-width: 100%;
-  width: 70em;
-}
-
-@media (min-width: 576px) {
-  .container-sm,
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-xxl,
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 1320px;
-  }
+  max-width: 90%;
+  width: 1366px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .col {
@@ -171,7 +202,7 @@ svg {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
   }
@@ -276,7 +307,7 @@ svg {
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .col-md {
     flex: 1 0 0%;
   }
@@ -381,7 +412,7 @@ svg {
     width: 100%;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -486,7 +517,7 @@ svg {
     width: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .col-xl {
     flex: 1 0 0%;
   }
@@ -587,111 +618,6 @@ svg {
   }
 
   .col-xl-12 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
-@media (min-width: 1400px) {
-  .col-xxl {
-    flex: 1 0 0%;
-  }
-
-  .row-cols-xxl-auto > * {
-    flex: 0 0 auto;
-    width: auto;
-  }
-
-  .row-cols-xxl-1 > * {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  .row-cols-xxl-2 > * {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-
-  .row-cols-xxl-3 > * {
-    flex: 0 0 auto;
-    width: 33.3333333333%;
-  }
-
-  .row-cols-xxl-4 > * {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-
-  .row-cols-xxl-5 > * {
-    flex: 0 0 auto;
-    width: 20%;
-  }
-
-  .row-cols-xxl-6 > * {
-    flex: 0 0 auto;
-    width: 16.6666666667%;
-  }
-
-  .col-xxl-auto {
-    flex: 0 0 auto;
-    width: auto;
-  }
-
-  .col-xxl-1 {
-    flex: 0 0 auto;
-    width: 8.33333333%;
-  }
-
-  .col-xxl-2 {
-    flex: 0 0 auto;
-    width: 16.66666667%;
-  }
-
-  .col-xxl-3 {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-
-  .col-xxl-4 {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-  }
-
-  .col-xxl-5 {
-    flex: 0 0 auto;
-    width: 41.66666667%;
-  }
-
-  .col-xxl-6 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-
-  .col-xxl-7 {
-    flex: 0 0 auto;
-    width: 58.33333333%;
-  }
-
-  .col-xxl-8 {
-    flex: 0 0 auto;
-    width: 66.66666667%;
-  }
-
-  .col-xxl-9 {
-    flex: 0 0 auto;
-    width: 75%;
-  }
-
-  .col-xxl-10 {
-    flex: 0 0 auto;
-    width: 83.33333333%;
-  }
-
-  .col-xxl-11 {
-    flex: 0 0 auto;
-    width: 91.66666667%;
-  }
-
-  .col-xxl-12 {
     flex: 0 0 auto;
     width: 100%;
   }
