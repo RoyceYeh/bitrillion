@@ -217,7 +217,7 @@ td {
 }
 
 .order .confirm input::placeholder {
-  font-size: 0.25rem;
+  font-size: 0.75rem;
 }
 
 .submit {
@@ -256,6 +256,9 @@ td {
   .order label {
     cursor: pointer;
     font-size: 1.25rem;
+  }
+  .order .confirm input::placeholder {
+    font-size: 0.25rem;
   }
 }
 
@@ -306,7 +309,7 @@ td {
 
 .right th,
 td {
-  font-size: 1x;
+  font-size: 1rem;
 }
 
 /* detail */
