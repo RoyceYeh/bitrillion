@@ -862,7 +862,7 @@
             name,
             image,
             symbol,
-            current_price,
+            total_volume,
             price_change_percentage_24h,
           } = coin;
           const coinEl = document.createElement("tr");
@@ -871,8 +871,8 @@
        
           <td><img src="${image}" alt=""></td>
           <td>${symbol}</td>
-          <td>${current_price}</td>
           <td class="change">${price_change_percentage_24h}</td>
+          <td>${total_volume}</td>
        
   `;
 
