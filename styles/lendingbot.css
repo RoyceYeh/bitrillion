@@ -60,7 +60,7 @@ td {
 
 .right th,
 td {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-align: left;
 }
 
@@ -97,7 +97,7 @@ td {
 
   .right th,
   td {
-    font-size: 1.15rem;
+    font-size: 1rem;
     text-align: left;
   }
 }
@@ -305,11 +305,6 @@ td {
     overflow: scroll;
     overflow-x: hidden;
   }
-}
-
-.right th,
-td {
-  font-size: 1rem;
 }
 
 /* detail */
