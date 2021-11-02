@@ -54,12 +54,6 @@
   line-height: 1.5;
 }
 
-.value h2,
-p {
-  padding: 0 1rem;
-  padding-bottom: 0.5rem;
-}
-
 .value h2 {
   color: var(--main-color);
 }
