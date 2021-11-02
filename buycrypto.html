@@ -23,136 +23,137 @@
     <link rel="stylesheet" href="styles/buycrypto.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <a href="https://royceyeh.github.io/bitrillion/"
-              ><img src="pic/logo.svg" alt="logo" />
-              <p>Bitrillion</p>
-            </a>
-          </div>
-          <div class="menu">
-            <ul>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/buycrypto"
-                  >Buy Crypto</a
-                >
-              </li>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/lendingbot"
-                  >Lending Bot</a
-                >
-              </li>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/earn"
-                  >Bitrillion Earn</a
-                >
-              </li>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/academy"
-                  >Academy</a
-                >
-              </li>
-
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/community"
-                  >Community</a
-                >
-              </li>
-              <li>
-                <a href="https://royceyeh.github.io/bitrillion/whoweare"
-                  >Who we are</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="btn_group">
-            <a class="login" href="#"> Login </a>
-            <div class="started">
-              <a href="">Get started</a>
+    <div class="wrap">
+      <header>
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <a href="https://royceyeh.github.io/bitrillion/"
+                ><img src="pic/logo.svg" alt="logo" />
+                <p>Bitrillion</p>
+              </a>
             </div>
-          </div>
-          <a class="hamBar" href="#"><i class="fas fa-bars"></i></a>
-        </nav>
-      </div>
-    </header>
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="https://royceyeh.github.io/bitrillion/buycrypto"
+                    >Buy Crypto</a
+                  >
+                </li>
+                <li>
+                  <a href="https://royceyeh.github.io/bitrillion/lendingbot"
+                    >Lending Bot</a
+                  >
+                </li>
+                <li>
+                  <a href="https://royceyeh.github.io/bitrillion/earn"
+                    >Bitrillion Earn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://royceyeh.github.io/bitrillion/academy"
+                    >Academy</a
+                  >
+                </li>
 
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-5 col-lg-4">
-            <div class="sidebar">
-              <table class="aside">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Change</th>
-                  </tr>
-                </thead>
-                <tbody id="tbody"></tbody>
-              </table>
+                <li>
+                  <a href="https://royceyeh.github.io/bitrillion/community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a href="https://royceyeh.github.io/bitrillion/whoweare"
+                    >Who we are</a
+                  >
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="col-12 col-md-7 col-lg-8">
-            <div class="trade">
-              <div class="crypto_form">
-                <div class="buybar">
-                  <div class="logo">
-                    <div class="pic">
-                      <img
-                        src="pic/crypto-icon/bitcoin_blockchain_icon.svg"
-                        alt="logo"
-                      />
+            <div class="btn_group">
+              <a class="login" href="#"> Login </a>
+              <div class="started">
+                <a href="">Get started</a>
+              </div>
+            </div>
+            <a class="hamBar" href="#"><i class="fas fa-bars"></i></a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="sidebar">
+                <table class="aside">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Change</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody"></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-8">
+              <div class="trade">
+                <div class="crypto_form">
+                  <div class="buybar">
+                    <div class="logo">
+                      <div class="pic">
+                        <img
+                          src="pic/crypto-icon/bitcoin_blockchain_icon.svg"
+                          alt="logo"
+                        />
+                      </div>
+
+                      <p>Bitcoin</p>
                     </div>
-
-                    <p>Bitcoin</p>
-                  </div>
-                  <div class="btn">
-                    <button>Buy</button>
-                    <button>Sell</button>
-                  </div>
-                </div>
-
-                <div class="chart">
-                  <!-- TradingView Widget BEGIN -->
-                  <div class="tradingview-widget-container">
-                    <div id="tradingview_90ec6"></div>
-                    <div class="tradingview-widget-copyright">
-                      <a
-                        href="https://tw.tradingview.com/symbols/BTCUSD/?exchange=COINBASE"
-                        rel="noopener"
-                        target="_blank"
-                        ><span class="blue-text">BTCUSD 圖表</span></a
-                      >由TradingView提供
+                    <div class="btn">
+                      <button>Buy</button>
+                      <button>Sell</button>
                     </div>
-                    <script
-                      type="text/javascript"
-                      src="https://s3.tradingview.com/tv.js"
-                    ></script>
-                    <script type="text/javascript">
-                      new TradingView.widget({
-                        width: "100%",
-                        height: "60%",
-                        symbol: "COINBASE:BTCUSD",
-                        interval: "D",
-                        timezone: "Etc/UTC",
-                        theme: "light",
-                        style: "1",
-                        locale: "zh_TW",
-                        toolbar_bg: "#f1f3f6",
-                        enable_publishing: false,
-                        save_image: false,
-                        container_id: "tradingview_90ec6",
-                      });
-                    </script>
                   </div>
-                  <!-- TradingView Widget END -->
 
-                  <!-- TradingView Widget BEGIN -->
-                  <!-- <div class="tradingview-widget-container">
+                  <div class="chart">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                      <div id="tradingview_90ec6"></div>
+                      <div class="tradingview-widget-copyright">
+                        <a
+                          href="https://tw.tradingview.com/symbols/BTCUSD/?exchange=COINBASE"
+                          rel="noopener"
+                          target="_blank"
+                          ><span class="blue-text">BTCUSD 圖表</span></a
+                        >由TradingView提供
+                      </div>
+                      <script
+                        type="text/javascript"
+                        src="https://s3.tradingview.com/tv.js"
+                      ></script>
+                      <script type="text/javascript">
+                        new TradingView.widget({
+                          width: "100%",
+                          height: "60%",
+                          symbol: "COINBASE:BTCUSD",
+                          interval: "D",
+                          timezone: "Etc/UTC",
+                          theme: "light",
+                          style: "1",
+                          locale: "zh_TW",
+                          toolbar_bg: "#f1f3f6",
+                          enable_publishing: false,
+                          save_image: false,
+                          container_id: "tradingview_90ec6",
+                        });
+                      </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+
+                    <!-- TradingView Widget BEGIN -->
+                    <!-- <div class="tradingview-widget-container">
                     <div id="tradingview_ef0ee"></div>
                     <div class="tradingview-widget-copyright">
                       <a
@@ -185,125 +186,129 @@
                       });
                     </script>
                   </div> -->
-                  <!-- TradingView Widget END -->
+                    <!-- TradingView Widget END -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="tab">
-          <div class="tab_css">
-            <input id="tab1" type="radio" name="tab" checked="checked" />
-            <label for="tab1"> Intro</label>
-            <div class="tab_content">
-              <h3>Lorem ipsum dolor</h3>
-              <p>
-                sit amet consectetur adipisicing elit. Labore amet assumendae,
-                ab praesentium fugit iste voluptatibus quidem assumenda alias
-                dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, dolorum illo perferendis ipsa vero, vel repellat
-                molestiae architecto rem magni neque distinctio nemo?
-                Consequuntur accusantium ullam architecto dicta accusamus natus!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Blanditiis hic, perspiciatis velit, minima sapiente doloremque
-                eaque sit pariatur molestias voluptatibus repudiandae repellat
-                similique, alias et error illo! Vero eaque, officia voluptate
-                accusantium quae labore accusamus explicabo, perferendis fuga
-                inventore nulla rem aperiam nisi doloremque recusandae
-                consectetur! A deserunt distinctio eos hic tempora! Vero
-                voluptates quae minus dolorem repudiandae doloremque possimus.
-                Quae quo beatae aperiam dolorum accusamus accusantium? Excepturi
-                soluta quos, ab omnis ducimus numquam possimus sit mollitia quas
-                qui rem autem corporis adipisci assumenda deserunt veritatis
-                dignissimos ex neque, perspiciatis earum sunt nihil vel, eos
-                cumque! Architecto perferendis quae consectetur.
-              </p>
-            </div>
+          <div class="tab">
+            <div class="tab_css">
+              <input id="tab1" type="radio" name="tab" checked="checked" />
+              <label for="tab1"> Intro</label>
+              <div class="tab_content">
+                <h3>Lorem ipsum dolor</h3>
+                <p>
+                  sit amet consectetur adipisicing elit. Labore amet assumendae,
+                  ab praesentium fugit iste voluptatibus quidem assumenda alias
+                  dolor. Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Provident, dolorum illo perferendis ipsa vero, vel
+                  repellat molestiae architecto rem magni neque distinctio nemo?
+                  Consequuntur accusantium ullam architecto dicta accusamus
+                  natus! Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit. Blanditiis hic, perspiciatis velit, minima sapiente
+                  doloremque eaque sit pariatur molestias voluptatibus
+                  repudiandae repellat similique, alias et error illo! Vero
+                  eaque, officia voluptate accusantium quae labore accusamus
+                  explicabo, perferendis fuga inventore nulla rem aperiam nisi
+                  doloremque recusandae consectetur! A deserunt distinctio eos
+                  hic tempora! Vero voluptates quae minus dolorem repudiandae
+                  doloremque possimus. Quae quo beatae aperiam dolorum accusamus
+                  accusantium? Excepturi soluta quos, ab omnis ducimus numquam
+                  possimus sit mollitia quas qui rem autem corporis adipisci
+                  assumenda deserunt veritatis dignissimos ex neque,
+                  perspiciatis earum sunt nihil vel, eos cumque! Architecto
+                  perferendis quae consectetur.
+                </p>
+              </div>
 
-            <input id="tab3" type="radio" name="tab" />
-            <label for="tab3">Analysis</label>
-            <div class="tab_content">
-              <!-- TradingView Widget BEGIN -->
-              <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <div class="tradingview-widget-copyright">
-                  <a
-                    href="https://www.tradingview.com/symbols/BTCUSD/technicals/"
-                    rel="noopener"
-                    target="_blank"
-                    ><span class="blue-text"
-                      >Technical Analysis for BTCUSD</span
-                    ></a
+              <input id="tab3" type="radio" name="tab" />
+              <label for="tab3">Analysis</label>
+              <div class="tab_content">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <div class="tradingview-widget-copyright">
+                    <a
+                      href="https://www.tradingview.com/symbols/BTCUSD/technicals/"
+                      rel="noopener"
+                      target="_blank"
+                      ><span class="blue-text"
+                        >Technical Analysis for BTCUSD</span
+                      ></a
+                    >
+                    by TradingView
+                  </div>
+                  <script
+                    type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
+                    async
                   >
-                  by TradingView
+                      {
+                      "interval": "1m",
+                      "width": "100%",
+                      "isTransparent": false,
+                      "height": "100%",
+                      "symbol": "COINBASE:BTCUSD",
+                      "showIntervalTabs": true,
+                      "locale": "en",
+                      "colorTheme": "light"
+                    }
+                  </script>
                 </div>
-                <script
-                  type="text/javascript"
-                  src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                  async
-                >
-                    {
-                    "interval": "1m",
-                    "width": "100%",
-                    "isTransparent": false,
-                    "height": "100%",
-                    "symbol": "COINBASE:BTCUSD",
-                    "showIntervalTabs": true,
-                    "locale": "en",
-                    "colorTheme": "light"
-                  }
-                </script>
+                <!-- TradingView Widget END -->
               </div>
-              <!-- TradingView Widget END -->
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 logo">
-            <a href="#">Bitrillion</a>
-            <select name="" id="">
-              <option value="">English</option>
-              <option value="">Chinese</option>
-            </select>
-            <p>©copyright</p>
-          </div>
-          <div class="col-12 col-md-8 list">
-            <div class="col-md-4 company">
-              <ul>
-                <li>About</li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Affiliates</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Cookie policy</a></li>
-              </ul>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 logo">
+              <a href="#">Bitrillion</a>
+              <select name="" id="">
+                <option value="">English</option>
+                <option value="">Chinese</option>
+              </select>
+              <p>©copyright</p>
             </div>
-            <div class="col-md-4 support">
-              <ul>
-                <li>Help center</li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Payment methods</a></li>
-                <li><a href="#">Account information</a></li>
-                <li><a href="#">ID verification</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 business">
-              <ul>
-                <li>Prime</li>
-                <li><a href="#">Investors</a></li>
-                <li><a href="#">Custody</a></li>
-                <li><a href="#">Asset Hub</a></li>
-                <li><a href="#">Commerce</a></li>
-              </ul>
+            <div class="col-12 col-md-8 list">
+              <div class="col-md-4 company">
+                <ul>
+                  <li>About</li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Affiliates</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Cookie policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 support">
+                <ul>
+                  <li>Help center</li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Payment methods</a></li>
+                  <li><a href="#">Account information</a></li>
+                  <li><a href="#">ID verification</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 business">
+                <ul>
+                  <li>Prime</li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Custody</a></li>
+                  <li><a href="#">Asset Hub</a></li>
+                  <li><a href="#">Commerce</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+
     <script>
       const BASE_URL =
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
