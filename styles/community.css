@@ -1,206 +1,207 @@
 .slogan {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  border-bottom: 0.5px solid var(--border-color);
-  height: 70vh;
-  margin: 2rem 0;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	border-bottom: 0.5px solid var(--border-color);
+	height: 70vh;
+	margin: 2rem 0;
 }
 
 .slogan .social {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-  gap: 1rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.8rem;
+	gap: 1rem;
+	justify-content: center;
 }
 
 .slogan .social a {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
 }
 
 .slogan .social img {
-  width: 30px;
+	width: 30px;
 }
 
 .slogan .title {
-  text-align: center;
-  margin-bottom: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .slogan .title h1 {
-  padding: 2rem;
-  text-shadow: 0.05em 0.075em 0 rgb(0 0 0 / 10%);
-  color: var(--main-color);
-  font-weight: bold;
+	padding: 2rem;
+	text-shadow: 0.05em 0.075em 0 rgb(0 0 0 / 10%);
+	color: var(--main-color);
+	font-weight: bold;
 }
 .slogan .title p {
-  color: var(--light-grey);
+	color: var(--light-grey);
 }
 
 @media screen and (min-width: 576px) {
-  .slogan .social {
-    font-size: 1rem;
-    gap: 2rem;
-  }
+	.slogan .social {
+		font-size: 1rem;
+		gap: 2rem;
+	}
 
-  .slogan .social a {
-    gap: 0.5rem;
-  }
+	.slogan .social a {
+		gap: 0.5rem;
+	}
 }
 
 /* *******************news******************* */
 
 .news {
-  margin: 4rem 0;
+	margin: 4rem 0;
 }
 
 .news .container header {
-  border-bottom: none;
-  z-index: 0;
+	border-bottom: none;
+	z-index: 0;
 }
 .news .container h2 {
-  margin: 2rem;
-  text-align: center;
+	margin: 2rem;
+	text-align: center;
 }
 
 .news .container section {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
 }
 
 .news .container .row .actions {
-  text-align: center;
-  margin: 2rem;
+	text-align: center;
+	margin: 2rem;
 }
 .news .container .row .actions li {
-  display: inline-block;
-  margin: auto;
+	display: inline-block;
+	margin: auto;
 }
 .news a {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 .news img {
-  width: 100%;
+	width: 100%;
 }
 
 .news h3 {
-  padding: 0 1.5rem;
-  flex-grow: 1;
-  line-height: 1.5;
+	padding: 0 1.5rem;
+	flex-grow: 1;
+	line-height: 1.5;
 }
 
 .news p {
-  color: var(--light-grey);
-  padding: 0.5rem 1rem;
-  flex-grow: 1;
-  line-height: 2;
+	color: var(--light-grey);
+	padding: 0.5rem 1rem;
+	flex-grow: 1;
+	line-height: 2;
 }
 .btn {
-  display: inline-block;
-  background: var(--main-color);
-  color: #fff;
-  border: 0;
-  font-size: 1rem;
-  box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
-  text-align: center;
-  letter-spacing: 1px;
-  padding: 0.85rem 2.75rem;
-  margin: 1rem 0;
+	display: inline-block;
+	background: var(--main-color);
+	color: #fff;
+	border: 0;
+	font-size: 1rem;
+	box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 0.85rem 2.75rem;
+	margin: 1rem 0;
 }
 
 /* ******************* banner ******************* */
 
 .banner {
-  overflow: hidden;
-  color: #fff;
-  text-align: center;
-  box-shadow: inset 0px 8px 0px 0px #fff;
-  background-size: cover;
-  background: url("../pic/hector-j-rivas-1FxMET2U5dU-unsplash.jpg");
-  padding: 10em 0;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	box-shadow: inset 0px 8px 0px 0px #fff;
+	background-size: cover;
+	background: url("../pic/hector-j-rivas-1FxMET2U5dU-unsplash.jpg");
+	padding: 10em 0;
 }
 .banner p {
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.5;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.5;
 }
 
 /* ******************* main ******************* */
 
 main {
-  margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 main p {
-  color: var(--light-grey);
+	color: var(--light-grey);
 }
 
 main .box {
-  padding: 1rem;
-  border-bottom: 1px solid var(--border-color);
+	padding: 1rem;
+	border-bottom: 1px solid var(--border-color);
 }
 
 main .post {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem;
 }
 
 main img {
-  width: 100%;
+	width: 100%;
 }
 
 .more_btn {
-  display: block;
-  background: var(--dark-blue);
-  color: #fff;
-  border: 0;
-  font-size: 1rem;
-  box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
-  text-align: center;
-  letter-spacing: 1px;
-  padding: 0.85rem 2.75rem;
-  margin: 1rem 0;
-  cursor: pointer;
+	display: block;
+	background: var(--dark-blue);
+	color: #fff;
+	border: 0;
+	font-size: 1rem;
+	box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 0.85rem 2.75rem;
+	margin: 1rem 0;
+	cursor: pointer;
 }
 
 main .content::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
+	width: 0px;
+	background: transparent; /* make scrollbar transparent */
 }
 
 /* ******************* Sidebar ******************* */
 
 .date {
-  display: inline-block;
-  background: var(--light-grey);
-  color: #fff;
-  text-transform: uppercase;
-  border: 0;
-  font-size: 1rem;
-  box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
-  text-align: center;
-  letter-spacing: 2px;
-  padding: 0.25rem 0.5rem;
-  margin: 1rem 0;
-  border-radius: 5px;
+	display: inline-block;
+	background: var(--light-grey);
+	color: #fff;
+	text-transform: uppercase;
+	border: 0;
+	font-size: 1rem;
+	box-shadow: 0.125em 0.175em 0 0 rgb(0 0 0 / 13%);
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 0.25rem 0.5rem;
+	margin: 1rem 0;
+	border-radius: 5px;
 }
 
 .divided img {
-  float: left;
-  width: 50%;
-  margin: 1rem 1rem 1rem 0;
+	float: left;
+	width: 50%;
+	margin: 1rem 1rem 1rem 0;
 }
 
 main .row {
-  border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 }
